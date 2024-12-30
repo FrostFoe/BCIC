@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner/Banner';
 import Message from './Message/Message';
+import About from './About/About';
 import 'animate.css';
 
 const Home = () => {
@@ -82,7 +83,8 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <Message />
+            {/* <Message /> */}
+            <About />
         </section>
     );
 };
