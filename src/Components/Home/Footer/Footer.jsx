@@ -10,7 +10,7 @@ const Footer = () => {
 
         <p className="text-sm text-gray-600 dark:text-gray-300">
           © Copyright 2025-2026 BCIC College. All Rights Reserved.
-          Made with ❤️ by <a href="https://frostfoe.netlify.app/" className="text-blue-500 hover:text-blue-700 transition-colors duration-300" target="_blank" rel="noopener noreferrer">@FrostFoe</a>
+          Made with ❤️ by <a href="https://frostfoe.netlify.app/" className="text-blue-500 hover:text-blue-700 transition-colors duration-300" target="_blank" rel="noopener noreferrer">@students</a>
         </p>
 
         <div className="flex -mx-2">
