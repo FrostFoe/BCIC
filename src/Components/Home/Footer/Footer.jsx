@@ -2,66 +2,35 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white-800 text-black py-10">
-      <div className="max-w-screen-xl mx-auto text-center">
-        {/* Logo and Text Centering */}
-        <div className="flex flex-col items-center mb-6">
-          <img
-            className="h-20 mb-4"
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Seal_of_BCIC_College.svg/1200px-Seal_of_BCIC_College.svg.png"
-            alt="BCIC College Logo"
-          />
-          <h1 className="text-3xl font-semibold">BCIC College</h1>
-        </div>
-        
-        {/* About Section */}
-        <div className="text-lg mb-6 px-6 md:px-12">
-          <p className="mb-4">
-            Welcome to BCIC College! We are committed to excellence in education and strive for 100% GPA-5 in both SSC and HSC exams.
-            Our holistic approach includes regular studies, sports, debates, photography, and more.
-          </p>
-          <p>
-            Our Houses—Ashuganj, Jamuna, Karnafuli, and Shahjalal—foster leadership, teamwork, and competitiveness through inter-house events.
-          </p>
-        </div>
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+        <a href="#">
+          <img className="w-auto h-7" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Seal_of_BCIC_College.svg/1200px-Seal_of_BCIC_College.svg.png" alt="BCIC College Logo" />
+        </a>
 
-        {/* Footer Navigation Links */}
-        <div className="flex justify-center flex-wrap gap-8 mb-6 text-lg">
-          <a href="#" className="hover:text-gray-400">Home</a>
-          <a href="#" className="hover:text-gray-400">Admissions</a>
-          <a href="#" className="hover:text-gray-400">Programs</a>
-          <a href="#" className="hover:text-gray-400">Faculty</a>
-          <a href="#" className="hover:text-gray-400">Events</a>
-          <a href="#" className="hover:text-gray-400">Contact</a>
-        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          © Copyright 2025-2026 BCIC College. All Rights Reserved.
+          Made with ❤️ by <a href="https://frostfoe.netlify.app/" className="text-blue-500 hover:text-blue-700 transition-colors duration-300" target="_blank" rel="noopener noreferrer">@FrostFoe</a>
+        </p>
 
-        {/* Social Media Links */}
-        <div className="flex justify-center gap-6 mb-6">
-          <a href="#" className="text-gray-400 hover:text-white">
-            <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M22.675 0h-21.35C.65 0 0 .65 0 1.325v21.351C0 23.35.65 24 1.325 24H12.81v-9.294H9.692v-3.622h3.118V8.413c0-3.1 1.893-4.789 4.659-4.789 1.325 0 2.463.1 2.794.144v3.24l-1.918.001c-1.504 0-1.794.716-1.794 1.764v2.314h3.587l-.467 3.622h-3.12V24h6.116c.675 0 1.325-.65 1.325-1.324V1.325C24 .65 23.35 0 22.675 0z" />
+        <div className="flex -mx-2">
+          <a href="mailto:frostfoe@gmail.com" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
+            <svg className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1.743 12.003h2.65V3.088l-.812-.52C2.406 1.816.86 2.658.86 4.05v7.074c0 .486.396.88.884.88Z" />
+                <path d="M.86 4.05v1.176l3.533 2.263l2.65 1.698l2.65-1.698l3.534-2.263V4.049c0-1.392-1.547-2.234-2.723-1.48l-.81.52l-2.651 1.697l-2.65-1.698l-.812-.52C2.406 1.816.86 2.658.86 4.05" />
+                <path d="M9.693 12.003h2.65a.882.882 0 0 0 .883-.88V4.049c0-1.392-1.546-2.234-2.722-1.48l-.811.52z" />
+              </g>
+            </svg>
+
+          </a>
+
+
+          <a href="https://github.com/FrostFoe" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.843 16.379C14.2072 16.7343 14.4313 17.2077 14.477 17.713C14.975 17.99 15.559 18.0583 16.101 17.9026C16.6455 17.747 17.1053 17.3803 17.378 16.884C17.7006 16.3235 18.2644 15.9438 18.905 15.856C18.905 15.856 19.874 15.842 18.973 16.461C18.441 16.7993 18.048 17.317 17.865 17.92C17.865 17.92 17.279 19.858 14.504 19.258C14.501 20.093 14.493 20.721 14.493 20.958C14.493 21.222 14.672 21.529 15.172 21.439C19.8154 19.893 22.651 15.2079 21.8676 10.3779C21.0842 5.54799 16.913 1.99937 12.026 2Z" />
             </svg>
           </a>
-          <a href="#" className="text-gray-400 hover:text-white">
-            <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M23.954 4.569c-.885.39-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.563-2.005.974-3.127 1.195-.897-.959-2.173-1.555-3.594-1.555-2.825 0-5.086 2.261-5.086 5.084 0 .398.045.787.133 1.163C7.69 8.095 4.066 6.13 1.64 3.161c-.437.748-.687 1.614-.687 2.554 0 1.764.896 3.319 2.257 4.235-.833-.026-1.616-.256-2.299-.637v.064c0 2.465 1.754 4.523 4.083 4.993-.427.116-.88.176-1.346.176-.328 0-.647-.03-.961-.086.648 2.022 2.527 3.493 4.75 3.533-1.74 1.363-3.932 2.177-6.314 2.177-.41 0-.816-.024-1.214-.07C2.905 21.923 6.355 23 10.064 23c12.072 0 18.675-10.003 18.675-18.676 0-.285-.006-.568-.019-.851C22.35 5.7 23.228 5.195 24 4.548c-.875.388-1.828.653-2.818.776C22.794 4.946 23.74 4.287 24 3.545z" />
-            </svg>
-          </a>
-        </div>
-
-        {/* Copyright Text */}
-        <div className="text-sm text-gray-400">
-          <span>© 2021-2022 BCIC College. All Rights Reserved.</span>
         </div>
       </div>
     </footer>

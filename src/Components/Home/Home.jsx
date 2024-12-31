@@ -51,7 +51,7 @@ const Home = () => {
 
                 <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                     <a
-                        href="#"
+                        href="https://www.facebook.com/AmaderBcicCollege"
                         className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                     >
                         Learn more
@@ -69,7 +69,7 @@ const Home = () => {
                         </svg>
                     </a>
                     <a
-                        href="#"
+                        href="https://www.youtube.com/watch?v=CChrQJQho1M&pp=ygUMYmNpYyBjb2xsZWdl"
                         className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                     >
                         <svg
@@ -84,7 +84,7 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            {/* <Message /> */}
+            <Message /> 
             <About />
             <Footer />
         </section>

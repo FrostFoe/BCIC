@@ -3,92 +3,69 @@ import React from 'react';
 const Message = () => {
     return (
         <div className="mt-12 px-4">
-            <div className="mb-8">
-                <h2 className="text-2xl font-bold text-center text-blue-800 mb-4">Chairman's Message</h2>
-                <div className="flex gap-4">
-                    <div className="w-1/2">
-                        <img className="object-cover w-full rounded-lg" src="https://i.postimg.cc/T13C4Mkd/chairman.jpg" alt="Chairman" />
-                    </div>
-                    <div className="w-1/2 text-gray-700">
-                        <p>
-                            BCIC College, Dhaka is now an icon of excellence in the education sector of the country. We are running our institution with digital applications by implementing the Information and Communications Technology following the Digital Bangladesh Vision 2021.
-                        </p>
-                        <p className="mt-2">
-                            Today BCIC College stands as one of the magnificent institutions in the country, synonymous with academic brilliance. It has been a milestone for measuring academic, co-curricular, and extracurricular excellence.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="mb-8">
-                <h2 className="text-2xl font-bold text-center text-blue-800 mb-4">Principal's Message</h2>
-                <div className="flex gap-4">
-                    <div className="w-1/2 text-gray-700">
-                        <p>
-                            Ever since its inception in 1983, BCIC College, Dhaka has been performing a pioneering role in the field of education. The institution has earned a distinctive position in introducing the National Curriculum and has aptly set a trend for others to follow.
-                        </p>
-                        <p className="mt-2">
-                            The main aim of this institution is to provide the highest quality education to every student. Students' basic knowledge of English is strengthened to prepare them to face global challenges effectively.
-                        </p>
-                    </div>
-                    <div className="w-1/2">
-                        <img className="object-cover w-full rounded-lg" src="https://i.postimg.cc/PxJk1cmD/ckk.jpg" alt="Principal" />
-                    </div>
-                </div>
-            </div>
-
             {/* Our Mission Section */}
-            <section id="our-mission" className="pt-65">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-5">
-                            <div className="section-title mt-50">
-                            <h1 className="text-3xl font-bold text-center text-blue-800">Our Mission</h1>        
+            <section className="bg-white dark:bg-gray-900 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+                <div className="mx-auto max-w-screen-sm">
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Mission</h2>
+                    <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+                        The College authority has always been keen to keep all kinds of developing activities
+                        continued. With the flow of development, the college has been constructed as a
+                        three-storied building and the facilities of laboratory rooms, students' common rooms,
+                        and the library room have been increased. From the beginning of the session, there is
+                        access for all students to cultural and sports competitions in keeping with regular class
+                        lessons on a pre-arranged schedule such as general knowledge, science exhibitions,
+                        recitation, music, painting, spelling, extempore speech, essay writing, debating,
+                        wall magazine, football, cricket, badminton, handball, volleyball, and so on.
+                    </p>
+                </div> 
+                <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
+                    <figure className="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
+                        <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Cultivating Creativity in Every Student</h3>
+                            <p className="my-4">"At BCIC College, we believe that creativity is the key to success. Our students are given opportunities to explore their talents through various competitions and extracurricular activities, helping them develop into well-rounded individuals."</p>
+                        </blockquote>
+                        <figcaption className="flex justify-center items-center space-x-3">
+                            <img className="w-9 h-9 rounded-full" src="https://i.postimg.cc/T13C4Mkd/chairman.jpg" alt="profile picture" />
+                            <div className="space-y-0.5 font-medium dark:text-white text-left">
+                                <div>Dr. John Doe</div>
+                                <div className="text-sm font-light text-gray-500 dark:text-gray-400">Founder of BCIC College</div>
                             </div>
-                            <div className="teachers-cont">
-                                <p>
-                                    The College authority has always been keen to keep all kinds of developing activities
-                                    continued. With the flow of development, the college has been constructed as a
-                                    three-storied building and the facilities of laboratory rooms, students' common rooms,
-                                    and the library room have been increased. From the beginning of the session, there is
-                                    access for all students to cultural and sports competitions in keeping with regular class
-                                    lessons on a pre-arranged schedule such as general knowledge, science exhibitions,
-                                    recitation, music, painting, spelling, extempore speech, essay writing, debating,
-                                    wall magazine, football, cricket, badminton, handball, volleyball, and so on.
-                                </p>
-                                <a href="https://www.bciccollege.edu.bd/details/our-mission" className="main-btn mt-55">
-                                    Read More
-                                </a>
+                        </figcaption>    
+                    </figure>
+                    <figure className="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
+                        <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Striving for Academic Excellence</h3>
+                            <p className="my-4">"We are committed to providing a high-quality education that meets international standards. Our academic programs are designed to challenge students and prepare them for the global workforce."</p>
+                        </blockquote>
+                        <figcaption className="flex justify-center items-center space-x-3">
+                            <img className="w-9 h-9 rounded-full" src="https://i.postimg.cc/PxJk1cmD/ckk.jpg" alt="profile picture" />
+                            <div className="space-y-0.5 font-medium dark:text-white text-left">
+                                <div>Jane Smith</div>
+                                <div className="text-sm font-light text-gray-500 dark:text-gray-400">Principal, BCIC College</div>
                             </div>
-                        </div>
-                    </div>
+                        </figcaption>    
+                    </figure>
+                </div>
+                <div className="text-center">
+                    <a href="https://www.bciccollege.edu.bd/details/our-mission" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        Show more...
+                    </a> 
                 </div>
             </section>
 
             {/* Our Vision Section */}
-            <section id="our-vision" className="pt-65">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-5">
-                            <div className="section-title mt-50">
-                            <h1 className="text-3xl font-bold text-center text-blue-800">Our Vision</h1>    
-                            </div>
-                            <div className="teachers-cont">
-                                <p>
-                                    BCIC College Dhaka came into being in July 1991 as a separate institution. From time immemorial
-                                    education has been regarded as the main catalyst of the present flourished civilization.
-                                    But in the existing education system, commercial purpose and lack of pragmatic education, our
-                                    total social system is gripping in the darkness. Keeping it in mind, Bangladesh Chemical Industries
-                                    Corporation has established this institution as a stepping stone from the darkness. This institution
-                                    is situated in the lap of Mirpur Botanical Garden and Dhaka National Zoo covering 6.16 Acres of land
-                                    with congenial and fascinating atmosphere.
-                                </p>
-                                <a href="https://www.bciccollege.edu.bd/details/our-vision" className="main-btn mt-55">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <section className="bg-white dark:bg-gray-900 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+                <div className="mx-auto max-w-screen-sm">
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Vision</h2>
+                    <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+                        BCIC College Dhaka came into being in July 1991 as a separate institution. From time immemorial
+                        education has been regarded as the main catalyst of the present flourished civilization.
+                        But in the existing education system, commercial purpose and lack of pragmatic education, our
+                        total social system is gripping in the darkness. Keeping it in mind, Bangladesh Chemical Industries
+                        Corporation has established this institution as a stepping stone from the darkness. This institution
+                        is situated in the lap of Mirpur Botanical Garden and Dhaka National Zoo covering 6.16 Acres of land
+                        with congenial and fascinating atmosphere.
+                    </p>
                 </div>
             </section>
         </div>
