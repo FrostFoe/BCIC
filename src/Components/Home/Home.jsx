@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './Banner/Banner';
 import Message from './Message/Message';
 import About from './About/About';
+import Footer from './Footer/Footer'
 import 'animate.css';
 
 const Home = () => {
@@ -85,6 +86,7 @@ const Home = () => {
             </div>
             {/* <Message /> */}
             <About />
+            <Footer />
         </section>
     );
 };
