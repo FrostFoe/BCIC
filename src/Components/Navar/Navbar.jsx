@@ -1,4 +1,13 @@
+import React from 'react';
+
 const Navbar = () => {
+    const handleSelectChange = (event) => {
+        const value = event.target.value;
+        if (value === 'About Us') {
+            window.location.href = '/about.html'; // Navigate to the about.html page
+        }
+    };
+
     return (
         <header className="bg-white">
             <div className="container mx-auto px-4 py-8 flex items-center">
@@ -7,9 +16,9 @@ const Navbar = () => {
                     <span className="ml-2 text-lg font-bold font-poppins">BCIC College</span> {/* Font weight set to bold */}
                 </div>
                 <div className="w-full max-w-xs xl:max-w-lg 2xl:max-w-2xl bg-gray-100 rounded-md hidden xl:flex items-center">
-                    <select className="bg-transparent uppercase font-bold text-sm p-4 mr-4 font-poppins">
+                    <select className="bg-transparent uppercase font-bold text-sm p-4 mr-4 font-poppins" onChange={handleSelectChange}>
                         <option>Home</option>
-                        <option>About Us</option>
+                        <option>About Us</option> {/* Added About Us option */}
                         <option>Services</option>
                         <option>Contact</option>
                     </select>
